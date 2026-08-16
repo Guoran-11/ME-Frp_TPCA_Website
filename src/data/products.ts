@@ -140,6 +140,25 @@ const productBases: ProductBase[] = [
       "官方人机验证本地自动求解，无需手动过码",
     ],
   },
+  {
+    id: "itml",
+    name: "Immortal-TUI-MEFrp-Launcher",
+    author: "zqamemz",
+    description:
+      "在 SSH 和真实命令行环境下使用的 ME Frp 图形化终端管理程序，基于 Textual 构建，无需 WebUI 即可完成隧道管理。",
+    icon: "https://itml.shiftcore.top/icon.png",
+    fallbackIcon: "https://itml.shiftcore.top/icon.png",
+    screenshot: "https://itml.shiftcore.top/pic1.png",
+    link: "/docs/itml",
+    tags: ["Python", "Textual", "TUI"],
+    features: [
+      "密码 / Token 登录，自动完成人机验证",
+      "隧道管理：列表、创建、启用/禁用、删除，创建时实时展示节点负载与带宽",
+      "Systemd 守护：隧道一键安装为系统服务，开机自启、进程守护",
+      "内置 mefrpc：首次启动自动安装，无需单独下载 frpc",
+      "每日签到与权益抽取，均支持人机验证",
+    ],
+  },
 ];
 
 /** 客户端产品总数（从静态定义自动推导） */

@@ -17,6 +17,7 @@ export interface VersionData {
   zl: string;
   fm: string;
   fd: string;
+  itml: string;
 }
 
 interface ChangelogData {
@@ -46,6 +47,7 @@ const DEFAULT_VERSIONS: VersionData = {
   zl: "v1.8",
   fm: "v1.0.0",
   fd: "v1.4.23",
+  itml: "v1.0.0",
 };
 
 /**
