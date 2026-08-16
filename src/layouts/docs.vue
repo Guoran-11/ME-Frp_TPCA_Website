@@ -131,7 +131,7 @@
         @click="sidebarOpen = false"></div>
 
       <!-- 主要内容区域 -->
-      <main class="flex-1 lg:ml-64">
+      <main class="docs-main flex-1 lg:ml-64 min-w-0 overflow-x-hidden">
         <!-- 移动端菜单按钮 -->
         <div class="lg:hidden p-4 border-b border-white/10">
           <UButton variant="ghost" size="sm" @click="sidebarOpen = !sidebarOpen">
@@ -171,3 +171,17 @@ watch(
   }
 );
 </script>
+
+<style>
+/* 文档页防横向溢出：允许长英文/代码/链接在必要时安全换行 */
+.docs-main :where(h1, h2, h3, h4, p, li, span, a, code, td, th) {
+  overflow-wrap: anywhere;
+}
+
+/* 代码块仍保持横向滚动，不因全局换行规则被强制折行 */
+.docs-main pre,
+.docs-main pre code {
+  overflow-wrap: normal;
+  white-space: pre;
+}
+</style>

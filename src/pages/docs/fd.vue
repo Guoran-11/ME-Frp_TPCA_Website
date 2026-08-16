@@ -104,7 +104,7 @@
         <div class="relative h-96 flex items-center justify-center">
           <img :key="currentImageIndex" :src="previewImages[currentImageIndex].src"
             :alt="previewImages[currentImageIndex].alt + ' - FrpDash 界面截图'"
-            class="max-h-full w-auto object-contain cursor-pointer rounded-lg" loading="lazy"
+            class="max-h-full max-w-full w-auto object-contain cursor-pointer rounded-lg" loading="lazy"
             @click="openImageModal(previewImages[currentImageIndex])" />
 
           <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
